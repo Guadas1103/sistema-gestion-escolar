@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Sistema de Gestión Escolar – Primaria Dolores Hidalgo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto escolar desarrollado como sistema web para la **gestión académica y administrativa** de una escuela primaria, enfocado en la digitalización de procesos escolares.
 
-## Available Scripts
+## 🏫 Descripción
+El sistema permite administrar usuarios, alumnos, calificaciones y boletas escolares, con control de acceso basado en roles.  
+Está diseñado para facilitar el trabajo de directivos y docentes, así como mejorar la organización de la información académica.
 
-In the project directory, you can run:
+## 👥 Roles del sistema
+- **Superusuario**
+  - Gestión de usuarios del sistema
+- **Directora**
+  - Administración de usuarios
+  - Gestión de noticias escolares
+  - Generación y consulta de boletas
+- **Profesor**
+  - Registro y consulta de calificaciones
+  - Caracterización de alumnos
+  - Visualización de boletas
 
-### `npm start`
+## ✨ Funcionalidades principales
+- Autenticación y autorización con Supabase Auth
+- Control de acceso mediante roles (RLS)
+- Gestión de alumnos y profesores
+- Registro de calificaciones mensuales y trimestrales
+- Cálculo automático de promedios
+- Generación de boletas en formato PDF
+- Caracterización del alumno (observaciones, apoyos, semáforo emocional)
+- Gestión de noticias visibles en el inicio del sistema
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Tecnologías utilizadas
+- **React (Create React App)**
+- **JavaScript**
+- **Supabase**
+  - Auth
+  - Base de datos PostgreSQL
+  - Row Level Security (RLS)
+- **CSS**
+- **jsPDF**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔐 Seguridad
+- Uso de variables de entorno para credenciales
+- Políticas RLS para proteger el acceso a los datos
+- Separación de permisos por rol de usuario
 
-### `npm test`
+## 🗄 Base de datos
+La aplicación utiliza **Supabase (PostgreSQL)** como base de datos y sistema de autenticación.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tablas principales
+- **usuarios**
+  - user_id
+  - nombre
+  - email
+  - user_type (superusuario, directora, profesor)
+- **alumnos**
+- **grupos**
+- **materias**
+- **calificaciones**
+- **periodos**
 
-### `npm run build`
+Las relaciones entre tablas permiten asociar alumnos con grupos, materias y periodos académicos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> Nota: Por motivos de seguridad y privacidad, la base de datos y los datos reales no se incluyen en este repositorio.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Estructura del proyecto
+src/
+├─ assets/
+├─ components/
+├─ context/
+├─ hooks/
+├─ pages/
+├─ services/
+├─ styles/
+├─ utils/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👩‍💻 Autor
+Guadas Domínguez  
+Proyecto académico – Desarrollo web

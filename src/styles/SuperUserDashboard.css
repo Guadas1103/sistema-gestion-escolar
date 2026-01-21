@@ -1,0 +1,74 @@
+/* Contenedor principal del dashboard para el Administrador */
+.admin-dashboard-container {
+    background-color: #f4f7fa;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .admin-dashboard-container h1 {
+    font-size: 2.5rem;
+    color: #1e3d58;
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard-container p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilo para las opciones de administración */
+  .admin-dashboard-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grid adaptable */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+  }
+  
+  /* Estilo para cada opción del dashboard */
+  .admin-option {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .admin-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .admin-option h3 {
+    font-size: 1.6rem;
+    color: #1e3d58;
+    margin-bottom: 15px;
+  }
+  
+  .admin-option p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .admin-option button {
+    background-color: #1e3d58;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .admin-option button:hover {
+    background-color: #16324d;
+  }
+  

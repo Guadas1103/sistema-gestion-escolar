@@ -1,0 +1,155 @@
+.directora-boletas-container {
+  max-width: 900px; /* Igual que profesor */
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #f4f7fa;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.directora-boletas-container h2 {
+  font-size: 2.2rem;
+  color: #1e3d58;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.form-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.form-filtros select,
+.form-filtros input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 300px;
+}
+
+.lista-alumnos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+}
+
+.alumno-btn {
+  background-color: #1e3d58;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.alumno-btn:hover {
+  background-color: #274e70;
+}
+
+.alumno-btn.seleccionado {
+  background-color: #16324d;
+  font-weight: bold;
+}
+
+.tabla-scroll-container {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.tabla-boletas {
+  width: max-content;
+  border-collapse: collapse;
+  min-width: 600px; /* Igual que profesor */
+  text-align: center;
+  font-size: 1rem;
+}
+
+.tabla-boletas thead tr {
+  background-color: #1e3d58;
+  color: white;
+}
+
+.tabla-boletas th,
+.tabla-boletas td {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+}
+
+.tabla-boletas tbody tr:nth-child(even) {
+  background-color: #e9f0fa;
+}
+
+.tabla-boletas tbody tr:hover {
+  background-color: #d1dceb;
+}
+
+.promedio-final {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.btn-generate-pdf {
+  display: inline-block;
+  background-color: #1e3d58;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin: 1rem 0 2rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.btn-generate-pdf:hover {
+  background-color: #16324d;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .directora-boletas-container {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .form-filtros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-filtros select,
+  .form-filtros input {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .lista-alumnos {
+    max-width: 100%;
+  }
+
+  .btn-generate-pdf {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .tabla-boletas th,
+  .tabla-boletas td {
+    padding: 8px 6px;
+    font-size: 0.9rem;
+  }
+}

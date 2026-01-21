@@ -1,0 +1,63 @@
+.directora-asignar-grupos-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #f4f7fa;
+  padding: 30px;
+  border-radius: 12px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+.directora-asignar-grupos-container h2 {
+  text-align: center;
+  color: #1e3d58;
+  margin-bottom: 25px;
+}
+
+.directora-asignar-grupos-container label {
+  font-weight: 600;
+  color: #1e3d58;
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.directora-asignar-grupos-container input,
+.directora-asignar-grupos-container select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.directora-asignar-grupos-container input:focus,
+.directora-asignar-grupos-container select:focus {
+  outline: none;
+  border-color: #1e3d58;
+}
+
+.directora-asignar-grupos-container button {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #1e3d58;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.directora-asignar-grupos-container button:hover {
+  background-color: #16324d;
+}
+
+.directora-asignar-grupos-container p {
+  text-align: center;
+  margin-top: 15px;
+  color: #e63946; /* rojo para mensajes de error */
+}

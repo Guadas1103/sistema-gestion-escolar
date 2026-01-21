@@ -1,0 +1,52 @@
+/* Estilos generales para el contenedor */
+.info-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  /* Contenedor de la tarjeta de información */
+  .info-card {
+    background: rgba(255, 255, 255, 0.3); /* Fondo de input con transparencia */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Títulos */
+  .info-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* Descripción */
+  .info-card p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* Estilos para el mapa embebido */
+.map-container {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Mejora de contraste para los textos dentro de la tarjeta */
+.info-card p strong {
+  color: #ffffff;
+  font-weight: bold;
+}

@@ -1,0 +1,24 @@
+/* LoginBackground.css - versión más suave */
+.login-bg {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(-45deg, #2c3e50, #34495e, #7f8c8d, #2c3e50);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

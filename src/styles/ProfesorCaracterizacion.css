@@ -1,0 +1,95 @@
+.profesor-caracterizacion-container {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #f4f7fa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.profesor-caracterizacion-container h2 {
+  text-align: center;
+  color: #1e3d58;
+  margin-bottom: 25px;
+}
+
+.profesor-caracterizacion-container label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #1e3d58;
+}
+
+.profesor-caracterizacion-container select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease;
+}
+
+.profesor-caracterizacion-container select:focus {
+  outline: none;
+  border-color: #1e3d58;
+}
+
+.tabla-alumnos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-alumnos th, .tabla-alumnos td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.tabla-alumnos th {
+  background-color: #1e3d58;
+  color: white;
+  font-weight: 600;
+}
+
+.tabla-alumnos tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabla-alumnos input[type="text"] {
+  width: 90%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.tabla-alumnos input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.tabla-alumnos button {
+  background-color: #1e3d58;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.tabla-alumnos button:hover {
+  background-color: #16324d;
+}
+
+.mensaje {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #e03e3e;
+  text-align: center;
+}

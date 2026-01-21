@@ -1,0 +1,38 @@
+/* Estilos para el formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  backdrop-filter: blur(4px);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #dddddd;
+}
+
+.contact-form button {
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #43a047;
+}

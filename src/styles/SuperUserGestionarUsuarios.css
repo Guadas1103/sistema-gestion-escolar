@@ -1,0 +1,146 @@
+/* Contenedor principal del CRUD de usuarios */
+.superuser-usuarios-container {
+  background-color: #f4f7fa;
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  max-width: 900px;
+  margin: 30px auto;       /* Un poco de margen arriba y abajo */
+  border-radius: 16px;     /* Esquinas redondeadas más pronunciadas */
+  box-shadow: 0 8px 20px rgba(30, 61, 88, 0.15); /* Sombra suave y en color del tema */
+  box-sizing: border-box;  /* Para que padding no aumente ancho */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Opcional: sombra más intensa al pasar mouse */
+.superuser-usuarios-container:hover {
+  box-shadow: 0 12px 30px rgba(30, 61, 88, 0.25);
+}
+
+body {
+  background-color: #e9f0f7; /* Un azul muy suave que combina con el tema */
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Título */
+.superuser-usuarios-container h1 {
+  font-size: 2.5rem;
+  color: #1e3d58;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Tabla de usuarios */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.users-table th {
+  background-color: #1e3d58;
+  color: white;
+  font-weight: bold;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.users-table tr:hover {
+  background-color: #e6f0fa;
+}
+
+/* Botones */
+.btn {
+  background-color: #1e3d58;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+
+.btn:hover {
+  background-color: #16324d;
+}
+
+/* Botones pequeños para editar/eliminar en la tabla */
+.btn-small {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+/* Formulario de usuario */
+.user-form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.user-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1e3d58;
+}
+
+.user-form input,
+.user-form select {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.user-form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.modal-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}

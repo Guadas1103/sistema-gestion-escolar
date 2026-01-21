@@ -1,0 +1,171 @@
+.navbar-container {
+  background-color: #222;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Necesario para el ícono del menú */
+  z-index: 10; /* Asegura que el navbar esté encima del contenido */
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 20%; /* Hace el logo circular */
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+  z-index: 20; /* Asegura que el logo esté encima */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10; /* Asegura que los enlaces no cubran el contenido principal */
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: #fff;
+  padding: 5px 10px;
+  transition: color 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #ff4747;
+}
+
+.nav-links a.active {
+  color: #ff4747;
+}
+
+.sign-in-button {
+  background-color: #ff4747;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-in-button:hover {
+  background-color: #160606;
+}
+
+/* Estilo para el ícono del menú en pantallas pequeñas */
+.menu-icon {
+  display: none; /* Oculto por defecto */
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  top: 20px;
+  right: 20px; /* Colócalo a la derecha */
+  z-index: 30; /* Asegúrate de que esté por encima del menú */
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+.menu-icon span {
+  pointer-events: none;
+}
+
+/* Estilos cuando el menú está abierto */
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute; /* Fija el menú en la parte superior */
+  top: 0; /* Colócalo en la parte superior */
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  background-color: #222; /* Color de fondo del menú */
+  padding: 20px;
+  z-index: 15; /* Asegura que esté encima del contenido */
+  transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+}
+
+/* Para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Ocultamos los enlaces por defecto en pantallas pequeñas */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .menu-icon {
+    display: flex; /* Mostramos el ícono del menú en pantallas pequeñas */
+  }
+
+  .nav-links.open {
+    display: flex; /* Cuando el menú está abierto, mostramos los enlaces */
+    z-index: 20; /* Asegura que esté encima de todo el contenido */
+  }
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* fondo más suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #f1f1f1; /* gris claro en lugar de blanco */
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  color: #333; /* texto oscuro pero no negro */
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-buttons button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #4a90e2; /* azul más tenue */
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.modal-buttons button:hover {
+  background-color: #357ab8; /* azul oscuro al pasar el mouse */
+}
+
+.modal-buttons button:last-child {
+  background-color: #888; /* gris medio para el botón de cancelar */
+}
+
+.modal-buttons button:last-child:hover {
+  background-color: #666; /* gris más oscuro al pasar el mouse */
+}
