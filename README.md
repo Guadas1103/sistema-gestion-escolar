@@ -20,7 +20,6 @@ Está diseñado para facilitar el trabajo de directivos y docentes, así como me
 
 ## ✨ Funcionalidades principales
 - Autenticación y autorización con Supabase Auth
-- Control de acceso mediante roles (RLS)
 - Gestión de alumnos y profesores
 - Registro de calificaciones mensuales y trimestrales
 - Cálculo automático de promedios
