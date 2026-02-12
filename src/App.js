@@ -29,7 +29,7 @@ const PrivateRoute = ({ element, requiredRole }) => {
   const { user, loading } = useContext(AuthContext);
 
   if (loading) {
-    // Mientras carga el usuario, no renderices nada o muestra un loader
+   
     return <div>Cargando...</div>;
   }
 
